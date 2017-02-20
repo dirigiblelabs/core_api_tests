@@ -6,9 +6,9 @@ var response = require('net/http/response');
 
 var options = {
     method: 'GET', // default
-    host: 'http://services.odata.org',
+    host: 'http://jsonplaceholder.typicode.com',
     port: 80,
-    path: '/V4/Northwind/Northwind.svc/',
+    path: '/posts/',
     binary: false 
 };
 
