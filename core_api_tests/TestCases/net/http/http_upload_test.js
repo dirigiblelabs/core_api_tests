@@ -12,7 +12,7 @@ if (request.getMethod() === "POST") {
 			response.println("[File Name] " + file.name);
 			response.println("[File Data]");
 			// response.println(file.data); // as a raw byte array or as a string below
-			response.println(String.fromCharCode.apply(null, file.data));
+			response.println(String.fromCharCode.apply(null, file.loadData()));
 		});
 	} else {
 		response.println("The request's content must be 'multipart'");
